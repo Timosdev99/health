@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@langchain/core": "^0.3.36",
+    "@langchain/core": "^0.3.37",
     "@langchain/google-genai": "^0.1.7",
-    "@langchain/langgraph": "^0.2.42",
+    "@langchain/langgraph": "^0.2.43",
     "@langchain/mongodb": "^0.1.0",
     "@langchain/openai": "^0.4.2",
     "abbrev": "^1.1.1",

@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-const { callAgent } = require("./agent"); // Adjust the path if needed
+const { callAgent } = require("./agent"); // Adjust path if necessary
 
 const uri = process.env.MONGODB_URI;
 
@@ -8,8 +8,8 @@ async function main() {
 
     try {
         await client.connect();
-        const query = "A popular health influencer claims that eating only bananas will improve overall health, is this true?";
-        const threadId = "unique_thread_id_123"; // Replace with an appropriate thread ID
+        const query = "Is it true that drinking celery juice on an empty stomach every morning has miraculous health benefits?";
+        const threadId = "unique_thread_id_1234"; // Replace with a unique ID for each interaction
         const result = await callAgent(client, query, threadId);
         console.log("Final result:", result);
     } catch (error) {
